@@ -1,8 +1,5 @@
 import React from 'react';
 import { Container, Loader, Header, Message, Button } from 'semantic-ui-react';
-import { News } from '/imports/api/news/news';
-import { Meteor } from 'meteor/meteor';
-import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 /** not neat**/

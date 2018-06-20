@@ -1,10 +1,7 @@
 import React from 'react';
 import { Grid, Item, Header } from 'semantic-ui-react';
-import { News } from '/imports/api/news/news';
 import PropTypes from 'prop-types';
-import NewsItem from '/imports/ui/components/NewsItem';
-import { Meteor } from 'meteor/meteor';
-import { withTracker } from 'meteor/react-meteor-data';
+import { withRouter, NavLink } from 'react-router-dom';
 
 
 /** A simple static component to render some text for the landing page. */
@@ -28,10 +25,7 @@ class Landing extends React.Component {
 
             <Grid.Column width={8}>
               <Header>Recent News</Header>
-              <Item.Group>
-                {this.props.newsItems.slice(0, 3).map((newsItem, index) =>
-                    <NewsItem key={index} newsItem={newsItem}/>)}
-              </Item.Group>
+              
             </Grid.Column>
 
           </Grid>
@@ -40,18 +34,5 @@ class Landing extends React.Component {
   }
 }
 
-/** Require an array of Stuff documents in the props. */
-Landing.propTypes = {
-  newsItems: PropTypes.array.isRequired,
-  ready: PropTypes.bool.isRequired,
-};
 
-/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(() => {
-  // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('News');
-  return {
-    newsItems: News.find({}).fetch(),
-    ready: subscription.ready(),
-  };
-})(Landing);
+export default withRouter (Landing);

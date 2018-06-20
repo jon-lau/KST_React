@@ -7,13 +7,8 @@ import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListNews from '../pages/ListNews';
-import ListJobs from '../pages/ListJobs';
 import NotFound from '../pages/NotFound';
-import NewsArticle from '../pages/NewsArticle';
 import AboutUs from '../pages/About';
-import Signup from '../pages/Signup';
-import Signout from '../pages/Signout';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
