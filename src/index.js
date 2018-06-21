@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
-import { BrowserRouter} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/components/NavBar';
 import Footer from './components/components/Footer';
@@ -17,7 +17,7 @@ import NewsArticle from './components/pages/NewsArticle';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <div>
     <NavBar/>
             <Switch>
@@ -29,7 +29,7 @@ ReactDOM.render(
             </Switch>
             <Footer/>
     </div>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 registerServiceWorker();
