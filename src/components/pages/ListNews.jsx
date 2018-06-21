@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Item, Header } from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
-import { defaultNews } from '../../constants/constants';
+import { defaultNews } from '../../constants/newsArticles';
 import NewsItem from '../components/NewsItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */

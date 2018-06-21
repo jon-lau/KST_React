@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { defaultNews } from '../../constants/constants';
+import { defaultNews } from '../../constants/newsArticles';
 
 /** Renders the Page for editing a single document. */
 class NewsArticle extends React.Component {

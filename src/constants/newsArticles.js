@@ -1,13 +1,3 @@
-export const CHART_CONST = {
-  SCEL_SOLAR: 'Solar Irradiation',
-  SCEL_PRESSURE: 'Pressure',
-  SCEL_TEMP: 'Temperature',
-  SCEL_BATT: 'Battery (V)',
-  SCEL_LIFE: 'Uptime (m)',
-  SCEL_HUMID: 'Humidity',
-  SCEL_PANEL: 'Panel Voltage (V)',
-  SCEL_WINDSPEED: 'Wind Speed' /* Not implemented Yet */,
-};
 export const defaultNews = [
   {
     title: 'KST Awarded Mail Support Services for JB Pearl Harbor Hickam',
