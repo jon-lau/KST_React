@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Item, Header } from 'semantic-ui-react';
-import PropTypes from 'prop-types';
-import { withRouter, NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { defaultNews } from '../../constants/constants'
 import NewsItem from '../components/NewsItem';
 

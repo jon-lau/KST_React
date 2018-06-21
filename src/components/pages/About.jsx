@@ -1,8 +1,6 @@
 import React from 'react';
-import { Container, Loader, Header, Message, Button } from 'semantic-ui-react';
-import { withRouter, NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
-/** not neat**/
+import { Container, Button } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 /** Renders the Page for editing a single document. */
 export default class AboutUs extends React.Component {
   render() {

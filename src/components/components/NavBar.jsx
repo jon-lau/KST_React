@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Header, Image } from 'semantic-ui-react';
 
