@@ -1,1 +1,1 @@
-export * from './scelconstants';
+export * from './constants';

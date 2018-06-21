@@ -2,6 +2,8 @@ import React from 'react';
 import { Grid, Item, Header } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, NavLink } from 'react-router-dom';
+import { defaultNews } from '../../constants/constants'
+import NewsItem from '../components/NewsItem';
 
 
 /** A simple static component to render some text for the landing page. */
@@ -25,6 +27,10 @@ class Landing extends React.Component {
 
             <Grid.Column width={8}>
               <Header>Recent News</Header>
+              <Item.Group>
+                {defaultNews.slice(0, 3).map((newsItem, index) =>
+                    <NewsItem key={index} newsItem={newsItem}/>)}
+              </Item.Group>
               
             </Grid.Column>
 
