@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, List, Input } from 'semantic-ui-react';
+import { Grid, List, Input, Container } from 'semantic-ui-react';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
@@ -7,6 +7,7 @@ class Footer extends React.Component {
     const divStyle = { color: 'white', marginTop: '-5px', paddingTop: '-5px' };
     return (
         <footer>
+          <Container>
           <div style={divStyle}><Grid className="custom-footer">
             <Grid columns={3} >
               <Grid.Column>
@@ -28,18 +29,9 @@ class Footer extends React.Component {
                   <List.Item>Email: KST@ksthawaii.com</List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column>
-                CONNECT
-                <hr/>
-                <Input
-                    action={{ color: 'black', content: 'Join' }}
-                    labelPosition='right'
-                    placeholder='Enter Email Address'
-                />
-              </Grid.Column>
-
             </Grid>
           </Grid></div>
+          </Container>
         </footer>
     );
   }
