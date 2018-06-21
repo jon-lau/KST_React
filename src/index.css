@@ -13,12 +13,12 @@ body {
 
 @charset "UTF-8";
 
-article, aside, footer, header, main, nav, section {
+article, aside,  header, main, nav, section {
   display:block;
 }
 
 html, body, h1, h2, h3, ul, li, a, p, article, aside,
-footer, header, main, nav, section {
+ header, main, nav, section {
   padding: 0;
   margin: 0;
 }
@@ -859,11 +859,8 @@ display: grid;
 }
 /*TODO fix footer not beinga aligned properly */
 footer {
-  padding: 5px;
-  margin-top: 10px;
   background-color: var(--bannercolor);
   clear: both;
-  bottom: 0px;
 }
 .footercont {
   padding: 10px;
