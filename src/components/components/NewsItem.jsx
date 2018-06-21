@@ -10,13 +10,13 @@ class NewsItem extends React.Component {
         <Item>
           <Item.Image size='tiny' src={this.props.newsItem.image}/>
           <Item.Content>
-            <Header as={NavLink} activeClassName="" exact to={`/newsarticle/${this.props.newsItem._id}`}>
+            <Header as={NavLink} activeClassName="" exact to={`/newsarticle/${this.props.newsItem.url}`}>
               {this.props.newsItem.title}
             </Header>
             <Item.Description>
               {this.props.newsItem.summary}
             </Item.Description>
-            <Link style={{ color: 'blue' }} to={`/newsarticle/${this.props.newsItem._id}`}>Read More</Link>
+            <Link style={{ color: 'blue' }} to={`/newsarticle/${this.props.newsItem.url}`}>Read More</Link>
           </Item.Content>
         </Item>
     );

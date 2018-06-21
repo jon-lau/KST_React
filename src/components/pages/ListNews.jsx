@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Item, Header, Loader } from 'semantic-ui-react';
+import { Container, Item, Header } from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
 import { defaultNews } from '../../constants/constants';
 import NewsItem from '../components/NewsItem';
