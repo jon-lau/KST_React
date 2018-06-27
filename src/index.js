@@ -9,6 +9,10 @@ import Footer from './components/components/Footer';
 import Landing from './components/pages/Landing';
 import NotFound from './components/pages/NotFound';
 import AboutUs from './components/pages/About';
+import Customers from './components/pages/Customers';
+import ContactUs from './components/pages/ContactUs';
+import ContractList from './components/pages/ContractList';
+import ContractInfo from './components/pages/ContractInfo';
 import ListNews from './components/pages/ListNews';
 import NewsArticle from './components/pages/NewsArticle';
 import Testimonials from './components/pages/Testimonials';
@@ -32,6 +36,10 @@ ReactDOM.render(
               <Route path="/services" component={Services}/>
               <Route path="/testimonials" component={Testimonials}/>
               <Route path="/jobs" component={ListJobs}/>
+              <Route path="/customers" component={Customers}/>
+              <Route path="/contactUs" component={ContactUs}/>
+              <Route path="/contractList" component={ContractList}/>
+              <Route path="/contractInfo" component={ContractInfo}/>
               <Route path="/newsarticle/:url" render={props => <NewsArticle {...props} />}/>
               <Route component={NotFound}/>
             </Switch>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Header, Image } from 'semantic-ui-react';
+import { Menu, Header, Image, Dropdown } from 'semantic-ui-react';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -28,9 +28,14 @@ class NavBar extends React.Component {
               Services
             </Header>
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/Customers">
             <Header inverted>
               Customers
+            </Header>
+          </Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/ContactUs">
+            <Header inverted>
+              Contact Us
             </Header>
           </Menu.Item>
           <Menu.Item>
@@ -53,6 +58,13 @@ class NavBar extends React.Component {
               Testimonials
             </Header>
           </Menu.Item>
+          <Dropdown simple item text='Categories'>
+      <Dropdown.Menu>
+        <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractList">Past/Existing Contracts</Dropdown.Item>
+        <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
+        <Dropdown.Item>Home</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
         </Menu>
     );
   }
