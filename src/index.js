@@ -11,6 +11,11 @@ import NotFound from './components/pages/NotFound';
 import AboutUs from './components/pages/About';
 import ListNews from './components/pages/ListNews';
 import NewsArticle from './components/pages/NewsArticle';
+import Testimonials from './components/pages/Testimonials';
+import Services from './components/pages/Services';
+import ListJobs from './components/pages/ListJobs';
+
+
 
 
 
@@ -24,6 +29,9 @@ ReactDOM.render(
               <Route exact path="/" component={Landing}/>
               <Route path="/aboutus" component={AboutUs}/>
               <Route path="/news" component={ListNews}/>
+              <Route path="/services" component={Services}/>
+              <Route path="/testimonials" component={Testimonials}/>
+              <Route path="/jobs" component={ListJobs}/>
               <Route path="/newsarticle/:url" render={props => <NewsArticle {...props} />}/>
               <Route component={NotFound}/>
             </Switch>
