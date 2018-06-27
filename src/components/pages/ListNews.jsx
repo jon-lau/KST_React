@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { defaultNews } from '../../constants/newsArticles';
 import NewsItem from '../components/NewsItem';
 
-/** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListNews extends React.Component {
   render() {
     return (

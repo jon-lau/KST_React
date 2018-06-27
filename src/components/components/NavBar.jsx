@@ -23,7 +23,7 @@ class NavBar extends React.Component {
               About Us
             </Header>
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/Services">
             <Header inverted>
               Services
             </Header>
@@ -51,6 +51,11 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/News">
             <Header inverted>
               News
+            </Header>
+          </Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/Testimonials">
+            <Header inverted>
+              Testimonials
             </Header>
           </Menu.Item>
           <Dropdown simple item text='Categories'>
