@@ -38,11 +38,12 @@ class NavBar extends React.Component {
               Contact Us
             </Header>
           </Menu.Item>
-          <Menu.Item>
-            <Header inverted>
-              Contracts
-            </Header>
-          </Menu.Item>
+          <Dropdown className = "navheader" simple item text='Contracts'>
+      <Dropdown.Menu>
+        <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractList">Past/Existing Contracts</Dropdown.Item>
+        <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
           <Menu.Item as={NavLink} activeClassName="" exact to="/Jobs">
             <Header inverted>
               Careers

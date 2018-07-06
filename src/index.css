@@ -976,6 +976,24 @@ fix color
   background-color: var(--linkscolorhover);
 
 }
+
+.navheader{
+      border: none;
+    margin: calc(2rem - .14285714em) 0 1rem !important;
+    padding: 0 0;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 700 !important;
+    line-height: 1.28571429em !important;
+    text-transform: none;
+        font-size: 1.28571429em !important;
+            margin-top: -.14285714em !important;
+                margin-bottom: 0 !important;
+                    margin-bottom: 0 !important;
+     box-sizing: inherit;
+
+     border-radius: 5px !important;
+    background: rgba(0,0,0,.25);
+}
 /*when index box begins to overflow
 FIRST BOX CLOSE
 TODO Optimize by bringing these settings to the default
@@ -1777,4 +1795,3 @@ TODO Optimize by bringing these settings to the default
     grid-column: 1/3;
   }
 }
-
