@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Card } from 'semantic-ui-react';
+import { Container, Header, Card, Grid } from 'semantic-ui-react';
 import JobItem from '../components/JobItem';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
@@ -12,11 +12,12 @@ class ListJobs extends React.Component {
         <div className="kst-landing-background">
           <Container>
             <Header as="h2" textAlign="center">Job Openings</Header>
-
-            <Card.Group>
+            <Grid columns={1} centered>
+            <Card.Group centered>
               {defaultJobs.map((jobItem, index) =>
                   <JobItem key={index} jobItem={jobItem}/>)}
             </Card.Group>
+            </Grid>
           </Container>
         </div>
     );
