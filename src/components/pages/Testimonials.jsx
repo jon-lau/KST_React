@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
+import { HashLink as Link } from 'react-router-hash-link';
 /** Renders the Page for editing a single document. */
 export default class Testimonials extends React.Component {
   render() {
@@ -31,12 +32,12 @@ export default class Testimonials extends React.Component {
           <div className = "triangle"></div>
           <div className = "annote">
             <br></br><br></br>
-            <div className = "C1">{/**<a href="Holloman2017April.html"><img src="/images/Hollomanicon.jpg" alt="holloman"></img></a>*/}</div>
+            <div className = "C1"><Link to="Holloman2017April.html"><img src="/images/Hollomanicon.jpg" alt="holloman"></img></Link></div>
             <div className = "C2">
               <br></br>
               Adam G. Sapp
               <br></br><br></br>
-              Regarding the {/*<a href="Holloman2017April.html">Holloman Contract</a>*/}
+              Regarding the <a href="Holloman2017April.html">Holloman Contract</a>
             </div>
             <div className = "C3"></div>
             <div className = "C4"></div>

@@ -2,8 +2,17 @@ import React from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Header, Image, Dropdown } from 'semantic-ui-react';
 
+
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
+
+  handleClick = () => {
+      this.props.history.push('/ContactUs');
+  };
+
+  handleClick1 = () => {
+      this.props.history.push('/ContractList');
+  };
   render() {
     const menuStyle = { marginBottom: '0px' };
     return (
@@ -39,11 +48,11 @@ class NavBar extends React.Component {
             </Header>
           </Menu.Item>
           <Dropdown className = "navheader" simple item text='Contracts'>
-      <Dropdown.Menu>
-        <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractList">Past/Existing Contracts</Dropdown.Item>
-        <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractList">Contract Lists</Dropdown.Item>
+              <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           <Menu.Item as={NavLink} activeClassName="" exact to="/Jobs">
             <Header inverted>
               Careers
@@ -63,6 +72,7 @@ class NavBar extends React.Component {
       <Dropdown.Menu>
         <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractList">Past/Existing Contracts</Dropdown.Item>
         <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
+        <Dropdown.Item as={NavLink} activeClassName="" exact to="/Careers">Careers</Dropdown.Item>
         <Dropdown.Item>Home</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

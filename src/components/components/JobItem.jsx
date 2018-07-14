@@ -22,7 +22,6 @@ class JobItem extends React.Component {
               <p>
                 &emsp;{this.props.jobItem.summary}
               </p>
-
               <br></br>
               <Container className="certificationContainer">
                 <ul>

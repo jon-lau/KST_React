@@ -19,7 +19,7 @@ export default class AboutUs extends React.Component {
               <li className="booleanlist">Cost Competetiveness</li>
               <li className="booleanlist">Sustaining employee growth and development</li>
             </ul>
-
+            <br></br>
             <p className="underlined">&emsp;KST is a native Hawaiian/Service Disabled Veteran Owned Small Business founded in Hawaii in March 2011. Ka’ala Systems Technology Corporation is a certified Minority and Disadvantaged Business Enterprise; GSA IT Schedule 70 and a certified participant within the SBA 8(a) Business Development Program. KST is also a GWAC STARS II contract holder # GS00Q17GWD2199 and Navy IDIQ SeaPort-e contract N00178-16-D-8836.</p>
 
 
@@ -48,7 +48,7 @@ export default class AboutUs extends React.Component {
             </ul>
 
             <p> &emsp; We are experts in planning, designing and building multi-departmental database management systems that integrate the many “islands of information” that exist in most local governments, state governments, regional, and national (federal) agencies. KST is highly skilled at analyzing an organization’s work functions and working with management and staff to evaluate the agency’s short- and long-term information management needs and objectives. Satisfying KST customer requirements and ensuring their ultimate satisfaction will always be our top priority. KST manages its entire workload, present and future, with minimal overhead, leaving more value to its customer community and saving them money. </p>
-            <Button as={NavLink} activeClassName="" exact to="/"></Button>
+
           </section>
             <img src="/images/mountain3.jpg" alt="mountain" className="bottompic"></img>
           </section>
