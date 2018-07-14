@@ -7,20 +7,26 @@ import NewsItem from '../components/NewsItem';
 class ListNews extends React.Component {
   render() {
     return (
-        <div className="kst-landing-background">
-          <Container>
-            <Header as="h2" textAlign="center">News and Announcements</Header>
-            <hr/>
-            <Item.Group>
+      <div className="kst-landing-background">
+        <Container centered>
+          <section class="mainboxHome">
+          <section class="newsheader">
+            <h1> News and Announcements </h1>
+          </section>
+          <Container centered>
+            <hr />
+            <Item.Group centered>
               {defaultNews.map((newsItem, index) =>
-                  <NewsItem key={index} newsItem={newsItem}/>)}
+                <NewsItem key={index} newsItem={newsItem} />)}
             </Item.Group>
-            <hr/>
+            <hr />
           </Container>
-        </div>
+          </section>
+        </Container>
+      </div>
     );
   }
 }
 
 
-export default withRouter (ListNews);
+export default withRouter(ListNews);
