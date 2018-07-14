@@ -7,7 +7,7 @@ export default class ContactUs extends React.Component {
     return (
       <div className="kst-landing-background">
       <Container>
-          <section class="content">
+          <section className="content ContactUs">
           <section>
             <h1>Contact Us</h1>
 
@@ -25,11 +25,11 @@ export default class ContactUs extends React.Component {
             <br></br>Office: 808-521-7000
             <br></br>Fax: 808-521-7003
             <br></br>Email: KST@ksthawaii.com
+            </p>
             <h5>
             <br></br>Business Hours
             <br></br>7:30am-3:30pm HST
             </h5>
-            </p>
           </section>
             <img src="/images/mountain3.jpg" alt="mountain" className="bottompic"></img>
           </section>

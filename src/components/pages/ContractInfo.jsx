@@ -22,6 +22,8 @@ export default class ContractList extends React.Component {
             <div className="button left"><a href="STARSII2017June.html">Stars II News Story</a></div>
             <br></br> <br></br><br></br>
             <div className="button left"><a href="https://www.gsa.gov/8astars2">GSA Stars II Website</a></div>
+            <br></br> <br></br><br></br>
+            <div className="button left"><a href="KST_Solutions_8(a)_Process.pdf" target="_blank">Streamlined 8(a) Sole Source Contracts</a></div>
             <br></br><br></br>
 
           </section>

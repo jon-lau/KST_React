@@ -420,22 +420,6 @@ position:relative;
   /* padding-bottom: 100px; */
 }
 
-.listbox{
-  width: 30em;
-  background-color: #DDDDDD;
-  padding: 10px;
-  display: table;
-  margin:auto;
-}
-.centered{
-  text-align: center;
-  color: #262626;
-}
-.centered.bold{
-  font-weight: bold;
-  color: #2D2D2D;
-}
-
 .triangle{
   /* background-color: rgb(230, 230, 230); */
   background-color: transparent;
@@ -515,18 +499,11 @@ position:relative;
   border: 1px solid black;
   background-color: var(--contractTableBG);
 }
-
-.contractTable tr th{
-  width:500px;
-  border: 1px solid black;
-  background-color: #211103;
-}
-
 .contractTable{
   margin-top: 10px;
   border: 1px solid black;
-  background-color: var(--contractTablecolor);
-  color: #A4DEF9;
+  background-color: var(--contractTableBorder);
+  color: var(--contractTablecolor);
 }
 
 .contentImage{
@@ -630,7 +607,7 @@ font-size: 20px;
 .bottompic {
   width: 100%;
   height: 211px;
-  margin-bottom: -2px;
+  margin-bottom: -5px;
   border-radius: 11px;
 }
 .underlined {
@@ -1420,10 +1397,7 @@ TODO Optimize by bringing these settings to the default
 /*FOURTH BOX CLOSE*/
 @media screen and (max-width:620px)and (min-width:477px){
 
-  .bottompic{
-    margin-bottom: -5px;
 
-  }
   .footersection{
     font-size: 12px;
   }
@@ -1577,33 +1551,16 @@ TODO Optimize by bringing these settings to the default
   }
 
 }
-/*FIFTH BOX CLOSE  ---  LAST ONE JK NOT REALLY*/
+/*FIFTH BOX CLOSE  ---  LAST ONE*/
 @media screen and (max-width:477px){
-  /* .TableContents br{
-     display: block;
-     margin-top: 10px;
-     content: " ";
-  } */
-  .bottompic{
-    margin-bottom: -7px;
-
-  }
   /*p{
     font-size: 12px;
   }*/
   h1{
-    font-size: 15px !important;
+    font-size: 15px;
   }
   h2{
-    font-size: 12px !important;
-    margin: 0px !important;
-  }
-  .content.ContactUs h2{
-    margin-bottom: 10px !important;
-  }
-  h3{
-    font-size: 8px !important;
-    margin: 0px !important;
+    font-size: 15px;
   }
   .content.jobpost .long{
     font-size: 11px;
@@ -1633,19 +1590,15 @@ TODO Optimize by bringing these settings to the default
     padding: 4px;
     border-radius: 9px;
   }
-  .button.left{
-  height: 20px !important;
-
-  }
   .content{
     font-size: 10px;
   }
 
   .content h1{
-    font-size: 10px;
+    font-size: 9px;
   }
   .content p{
-    font-size: 10px;
+    font-size: 7px;
   }
   .annote .C3{
     border-bottom: none;
@@ -1831,19 +1784,11 @@ TODO Optimize by bringing these settings to the default
   .group{
     width: 90%;
   }
-  .TableContents a{
-    font-size: 14px !important;
-    /* padding-top: 10px; */
-    margin-top: 10px;
-    display: block;
-  }
 
   /*.group{
   width: 300px;
   }*/
 }
-
-/*Sixth BOX CLOSE  ---  THE REAL LAST ONE*/
 @media screen and (max-width:340px){
   .newsblock > .block1{
     padding-right: 0px;

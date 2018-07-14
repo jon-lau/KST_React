@@ -72,7 +72,7 @@ class JobItem extends React.Component {
 //                       </li>
 //                     </ul>
 //                     <br></br>
-//                   </Container>                    
+//                   </Container>
 //                   </div>
 //                 </Card>
     );

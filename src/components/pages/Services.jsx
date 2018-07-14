@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 /** Renders the Page for editing a single document. */
 /** ref anchors aren't working, first and last links have been altered on send and recieve**/
 export default class Services extends React.Component {
@@ -14,28 +15,28 @@ export default class Services extends React.Component {
             <section>
               <h1 styles="border-bottom-style: none; text-align: center;">KST’s Primary Services by NAICS Codes</h1>
               <br></br><br></br>
-              <img src="images/NAICSbanner.png" alt="NAICS Banner" className="contentImage"></img>
+              <img src="images/TestBanner2.jpg" alt="NAICS Banner" className="contentImage"></img>
               <br></br>
               <div className="TableContents">
                 <h2>NAICS Code Table</h2>
-                <Link to="/Services#Service517919">517919 All Other Telecommunications</Link><br></br>
-                <a href="#Service541512">541512 Computer Systems Design Services</a><br></br>
-                <a href="#Service541513">541513 Computer Facilities Management Services</a><br></br>
-                <a href="#Service541519">541519 Other Computer Related Services</a><br></br>
-                <a href="#Service541618">541618 Other Management Consulting Services</a><br></br>
-                <a href="#Service517311">517311 Wired Telecommunications Carriers</a><br></br>
-                <a href="#Service541330">541330 Engineering Services</a><br></br>
-                <a href="#Service541511">541511 Custom Computer Programming Services</a><br></br>
-                <a href="#Service541990">541990 All Other Professional, Scientific, and Technical Services</a><br></br>
-                <a href="#Service561110">561110 Office Administrative Services</a><br></br>
-                <a href="#Service561320">561320 Temporary Help Services</a><br></br>
-                <a href="#Service561421">561421 Telephone Answering Services</a><br></br>
-                <a href="/Services#Service561621">561621 Security Systems Services (except Locksmiths)</a><br></br>
-                <Link to="/Services#Service811213">811213 Communication Equipment Repair and Maintenance</Link><br></br>
+                <Link to="#Service517919">517919 All Other Telecommunications</Link><br></br>
+                <Link to="#Service541512">541512 Computer Systems Design Services</Link><br></br>
+                <Link to="#Service541513">541513 Computer Facilities Management Services</Link><br></br>
+                <Link to="#Service541519">541519 Other Computer Related Services</Link><br></br>
+                <Link to="#Service541618">541618 Other Management Consulting Services</Link><br></br>
+                <Link to="#Service517311">517311 Wired Telecommunications Carriers</Link><br></br>
+                <Link to="#Service541330">541330 Engineering Services</Link><br></br>
+                <Link to="#Service541511">541511 Custom Computer Programming Services</Link><br></br>
+                <Link to="#Service541990">541990 All Other Professional, Scientific, and Technical Services</Link><br></br>
+                <Link to="#Service561110">561110 Office Administrative Services</Link><br></br>
+                <Link to="#Service561320">561320 Temporary Help Services</Link><br></br>
+                <Link to="#Service561421">561421 Telephone Answering Services</Link><br></br>
+                <Link to="#Service561621">561621 Security Systems Services (except Locksmiths)</Link><br></br>
+                <Link to="#Service811213">811213 Communication Equipment Repair and Maintenance</Link><br></br>
               </div>
               <br></br><br></br>
 
-              <h2 ref="Service517919">517919 All Other Telecommunications</h2>
+              <h2 id="Service517919">517919 All Other Telecommunications</h2>
               <br></br>
               This U.S. industry comprises establishments primarily engaged in providing specialized telecommunications services, such as satellite tracking, communications telemetry, and radar station operation. This industry also includes establishments primarily engaged in providing satellite terminal stations and associated facilities connected with one or more terrestrial systems and capable of transmitting telecommunications to, and receiving telecommunications from, satellite systems. Establishments providing Internet services or voice over Internet protocol (VoIP) services via client-supplied telecommunications connections are also included in this industry.
               <br></br><br></br>
@@ -91,7 +92,7 @@ export default class Services extends React.Component {
               This industry comprises establishments primarily engaged in supplying workers to clients' businesses for limited periods of time to supplement the working force of the client. The individuals provided are employees of the temporary help services establishment. However, these establishments do not provide direct supervision of their employees at the clients' work sites.
               <br></br><br></br>
 
-              <a name="Service561421" id="Service561421" ref="Service561421">561421 Telephone Answering Services</a>
+              <h2 id="Service561421">561421 Telephone Answering Services</h2>
               <br></br>
               This U.S. industry comprises establishments primarily engaged in answering telephone calls and relaying messages to clients.
               <br></br><br></br>

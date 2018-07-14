@@ -14,10 +14,10 @@ export default class ContractList extends React.Component {
 
 <tr>
 
-<td></td>
-<td>Contract &amp; Description</td>
-<td>Location</td>
-<td  >Contract No.</td>
+<th></th>
+<th>Contract &amp; Description</th>
+<th>Location</th>
+<th>Contract No.</th>
 </tr>
 <tr>
 <td></td>
