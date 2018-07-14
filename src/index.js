@@ -19,6 +19,7 @@ import Careers from  './components/pages/Careers';
 import Testimonials from './components/pages/Testimonials';
 import Services from './components/pages/Services';
 import ListJobs from './components/pages/ListJobs';
+import JobPost from './components/pages/JobPost';
 
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -42,6 +43,7 @@ ReactDOM.render(
               <Route path="/contractList" component={ContractList}/>
               <Route path="/contractInfo" component={ContractInfo}/>
               <Route path="/newsarticle/:url" render={props => <NewsArticle {...props} />}/>
+              <Route path="/jobpost/:url" render={props => <JobPost {...props} />}/>              
               <Route component={NotFound}/>
             </Switch>
             <Footer/>

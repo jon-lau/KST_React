@@ -9,6 +9,9 @@ body {
   background-attachment: fixed;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;
 }
 
 @charset "UTF-8";
@@ -366,6 +369,7 @@ position:relative;
   border-width: 0px;
   border-color: var(--content_outline);
   height: auto;
+  background-color: none;
 }
 
 .certificationContainer{
@@ -864,6 +868,14 @@ text-decoration: underline;
   margin: auto;
 }
 
+.jobContainer{
+  margin-top: 30px;
+}
+
+.jobCard{
+  width: 400px !important;
+}
+
 .jobTable tr td{
   padding: 10px;
 }
@@ -877,8 +889,9 @@ text-decoration: underline;
   color: var(--jobPostText);
   background-color:var(--jobPostBG);
   padding: 7px;
-  width: 443px;
-  height: 465px;
+  width: 400px;
+  text-align: left;
+
 }
 
 .jobPost h1{
@@ -929,6 +942,10 @@ display: grid;
 footer {
   background-color: var(--bannercolor);
   clear: both;
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;
+
 }
 .footercont {
   padding: 10px;
@@ -1099,9 +1116,6 @@ TODO Optimize by bringing these settings to the default
 
 }
 @media screen and (max-width:1032px){
-  .jobTable tr{
-    display: grid;
-  }
   .newsarticle section{
     margin: 0px;
   }
