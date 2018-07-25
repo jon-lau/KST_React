@@ -9,7 +9,7 @@ export default class Careers extends React.Component {
       <Container>
           <section className="content">
           <section>
-            <h1>Careers</h1>
+            <h1>Benefits</h1>
             <h2>Explore a Career in Information Technology</h2>
             <p>
 &emsp;If you enjoy solving problems, and want one of the country's fastest growing careers, consider a job with KST in information technology (IT). In this wide-ranging field, positions include everything from telecommunications and computer technical support and maintenance to computer programming, network and software engineering, as well as management positions in information systems and project management.
@@ -30,7 +30,15 @@ export default class Careers extends React.Component {
           Federal Holidays Time Off
           <br></br>
           Bereavement Leave
-          <br></br>
+
+
+
+
+
+
+
+
+                    <br></br>
           Training and Development
           <br></br>
           Growth Opportunities
@@ -49,7 +57,7 @@ export default class Careers extends React.Component {
           <br></br><br></br>
           <div className="button"><Link to="/Jobs">Current Job Listings at KST</Link></div>
           <br></br>
-          <div className="button"><a src='/images/handbookv2.pdf'>Employee Handbook [Download]</a></div>
+          <div className="button"><a src='/images/handbookv2.pdf' target="_blank">Employee Handbook [Download]</a></div>
           <br></br>
           </section>
             <img src="/images/mountain3.jpg" alt="mountain" className="bottompic"></img>

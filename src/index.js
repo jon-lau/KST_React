@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './slideshow.css';
+import './slide.js';
 import 'semantic-ui-css/semantic.min.css';
 import { HashRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
@@ -43,7 +45,7 @@ ReactDOM.render(
               <Route path="/contractList" component={ContractList}/>
               <Route path="/contractInfo" component={ContractInfo}/>
               <Route path="/newsarticle/:url" render={props => <NewsArticle {...props} />}/>
-              <Route path="/jobpost/:url" render={props => <JobPost {...props} />}/>              
+              <Route path="/jobpost/:url" render={props => <JobPost {...props} />}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
