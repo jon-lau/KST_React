@@ -5,7 +5,10 @@ body {
 }
 .kst-landing-background{
   background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  /* background-image: linear-gradient(to bottom, #315481, #918e82 100%); */
+  background-image: url("/images/Backgrounds/background13.jpg");
+  /* background-image: url("/../background2.jpg"); */
+  background-size: 2400px;
   background-attachment: fixed;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -39,15 +42,20 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside,
 --alertcolor: #bac1b8;
 --alertborder: #67697C;*/
 :root{
-  --bannercolor: #204b57;
+  /* --bannercolor: #204b57; */
+    --bannercolor: black;
   --bannertext: #58a4b0;
   --logocolor: #197BBD;
   --bodycolor: #EBF2FA;
   --navcolor: rgba(25, 123, 189,0.7);
   --navtext: white;
-  --linkscolor: #58a4b0;
-  --linkscolorhover: #498791;
-  --navborder: #2F565D;
+  /* --linkscolor: #58a4b0;
+  --linkscolorhover: #498791; */
+  --linkscolor: #199CE8;
+  --linkscolorhover: #4BB3FD;
+  --linkstexthover: #00487C;
+  --navborder: #00487C;
+  /* --navborder: #2F565D; */
   --contentcolor: #FFFFFF;
   --contenttext: black;
   --cboxcolor: #197BBD;
@@ -65,7 +73,8 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside,
   --infoHeadertext: #545E75;
 
   --newsblockcolor: rgba(84, 94, 117, 0.6);  /*#545E75*/
-  --content_outline: #5D737E;
+  /* --content_outline: #5D737E; */
+  --content_outline: #4C4C4C;
 
   --newspostcolor: #545E75;
   --newsheadercolor: #197BBD;
@@ -179,6 +188,9 @@ position:relative;
   /*overflow: auto;*/
   /*height: 700px;*/
   /*height: 100%;*/
+}
+.mainboxHome.index{
+  width: 99%;
 }
 .bold{
   font-weight: bold;
@@ -537,6 +549,7 @@ position:relative;
   width: 85%;
   display: table;
   margin: auto;
+  height: 174px;
 }
 
 .footnote {
@@ -545,6 +558,7 @@ position:relative;
   font-weight: normal;
   text-align: center;
 }
+
 .centerNews img{
   display: table;
   margin: auto;
@@ -614,6 +628,10 @@ position:relative;
 .button a{
   color: var(--navtext);
   text-decoration: none;
+}
+
+.button a:hover{
+  color: var(--linkstexthover);
 }
 .button:hover{
   background-color: var(--linkscolorhover);
@@ -1149,6 +1167,9 @@ TODO Optimize by bringing these settings to the default
   .mainboxHome.Openings{
     float: none;
     display: block;
+  }
+  .listbox{
+    width: 25em;
   }
 }
 /*SECOND BOX CLOSE */

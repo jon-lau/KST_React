@@ -53,11 +53,12 @@ class NavBar extends React.Component {
               <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/Jobs">
-            <Header inverted>
-              Careers
-            </Header>
-          </Menu.Item>
+          <Dropdown className = "navheader" simple item text='Careers'>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} activeClassName="" exact to="/Careers">Benefits</Dropdown.Item>
+              <Dropdown.Item as={NavLink} activeClassName="" exact to="/Jobs">Job Listings</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           <Menu.Item as={NavLink} activeClassName="" exact to="/News">
             <Header inverted>
               News
