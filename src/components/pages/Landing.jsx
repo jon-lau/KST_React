@@ -34,6 +34,7 @@ class Landing extends React.Component {
     return (
       <div className="kst-landing-background">
                   <Carousel
+              edgeEasing={true}
               autoplay={true}
               autoplayinterval={2}
               transitionMode={this.state.transitionMode}
@@ -133,8 +134,6 @@ Cable Plant ISP/OSP and Help Desks</p>
           </section>
 
         </Grid>
-        {/*<script>{console.log("test")}</script>*/}
-
       </div>
     );
   }
