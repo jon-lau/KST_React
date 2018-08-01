@@ -12,9 +12,9 @@ class JobPost extends React.Component {
     return (
       <div className="kst-landing-background">
       <Container>
-        <section class="mainboxHome">
+        <section className="mainboxHome">
 
-<section class="content jobpost">
+<section className="content jobpost">
   <section>
     <h1>{post.title}
     </h1>
@@ -24,25 +24,25 @@ class JobPost extends React.Component {
     <br></br><br></br>
     <h2>Skills:</h2>
     <br></br>
-    <ul class="booleanlist">
+    <ul className="booleanlist">
 {post.skills.map((skill, index) =>
   <li key={index} skill={skill}>{skill}</li>)}
     </ul>
     <br></br>
     <h2>Preferred Requirements:</h2>
     <br></br>
-    <ul class="booleanlist">
+    <ul className="booleanlist">
 {post.preferred.map((preferred, index) =>
   <li key={index} preferred={preferred}>{preferred}</li>)}
     </ul><br></br>
     <br></br>
     <h2>Mandatory Requirements:</h2>
     <br></br>
-    <ul class="booleanlist">
+    <ul className="booleanlist">
 {post.mandatory.map((mandatory, index) =>
   <li key={index} mandatory={mandatory}>{mandatory}</li>)}
     </ul><br></br>
-    <p class="footnote">
+    <p className="footnote">
       Ka’ala Systems Technology Corp. is committed to hiring and retaining a diverse workforce. We
 are proud to be an Equal Opportunity/Affirmative Action Employer, making decisions without
 regard to race, color, religion, creed, sex, sexual orientation, gender identity, marital status,
@@ -54,7 +54,7 @@ EEO/AA. U.S. Citizenship is required for this position.
     <br></br>
 
 
-    <div class="button">KST "Application for Employment" Forms</div>
+    <div className="button">KST "Application for Employment" Forms</div>
 
   </section>
   <img src="/images/mountain3.jpg" alt="mountain" className="bottompic"></img></section>
