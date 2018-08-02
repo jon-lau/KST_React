@@ -11,7 +11,7 @@ class Landing extends React.Component {
     return (
         <div className="kst-landing-background">
           <Grid textAlign='center' container>
-
+{/**slides: about us, 50th fastest growing companies, careers, Testimonials, credentials**/}
 
     <section className="mainboxHome index">
   <div className="full-slide-container">
@@ -22,7 +22,7 @@ class Landing extends React.Component {
     </div>
 
     <div className="mySlides fade">
-      <img src="/images/NavySupport1.png" styles="width:100%"/>
+      <img src="/images/NECCicon2.jpg" styles="width:100%"/>
     </div>
 
     <div className="mySlides fade">
