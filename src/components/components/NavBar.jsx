@@ -32,19 +32,9 @@ class NavBar extends React.Component {
               About Us
             </Header>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/Services">
+          <Menu.Item as={NavLink} activeClassName="" exact to="/News">
             <Header inverted>
-              Services
-            </Header>
-          </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/Customers">
-            <Header inverted>
-              Customers
-            </Header>
-          </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/ContactUs">
-            <Header inverted>
-              Contact Us
+              News
             </Header>
           </Menu.Item>
           <Dropdown className = "navheader" simple item text='Contracts'>
@@ -53,17 +43,28 @@ class NavBar extends React.Component {
               <Dropdown.Item as={NavLink} activeClassName="" exact to="/ContractInfo">Contract Info</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/Customers">
+            <Header inverted>
+              Customers
+            </Header>
+          </Menu.Item>
           <Dropdown className = "navheader" simple item text='Careers'>
             <Dropdown.Menu>
               <Dropdown.Item as={NavLink} activeClassName="" exact to="/Careers">Benefits</Dropdown.Item>
               <Dropdown.Item as={NavLink} activeClassName="" exact to="/Jobs">Job Listings</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/News">
+          <Menu.Item as={NavLink} activeClassName="" exact to="/ContactUs">
             <Header inverted>
-              News
+              Contact Us
             </Header>
           </Menu.Item>
+          <Dropdown className = "navheader" simple item text='Service'>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} activeClassName="" exact to="/Services">NAICS Codes</Dropdown.Item>
+              <Dropdown.Item as={NavLink} activeClassName="" exact to="/ServiceInfo">Credentials and Downloadable Files</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           <Menu.Item as={NavLink} activeClassName="" exact to="/Testimonials">
             <Header inverted>
               Testimonials

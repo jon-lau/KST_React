@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './slideshow.css';
+import './basic_styles.css'
 import './slide.js';
 import 'semantic-ui-css/semantic.min.css';
 import { HashRouter } from 'react-router-dom';
@@ -11,6 +12,7 @@ import Footer from './components/components/Footer';
 import Landing from './components/pages/Landing';
 import NotFound from './components/pages/NotFound';
 import AboutUs from './components/pages/About';
+import ServiceInfo from './components/pages/ServiceInfo'
 import Customers from './components/pages/Customers';
 import ContactUs from './components/pages/ContactUs';
 import ContractList from './components/pages/ContractList';
@@ -37,6 +39,7 @@ ReactDOM.render(
               <Route path="/aboutus" component={AboutUs}/>
               <Route path="/news" component={ListNews}/>
               <Route path="/services" component={Services}/>
+              <Route path="/serviceInfo" component={ServiceInfo}/>
               <Route path="/testimonials" component={Testimonials}/>
               <Route path="/jobs" component={ListJobs}/>
               <Route path="/customers" component={Customers}/>

@@ -17,13 +17,13 @@ class Landing extends React.Component {
   <div className="full-slide-container">
     <div className="slideshow-container">
 
-    <div className="mySlides fade">
+    {/*<div className="mySlides fade">
       <img src="/images/Compac.png" styles="width:100%"/>
     </div>
 
     <div className="mySlides fade">
       <img src="/images/NECCicon2.jpg" styles="width:100%"/>
-    </div>
+    </div>*/}
 
     <div className="mySlides fade">
       <img src="/images/NECCicon1.jpg" styles="width:100%"/>
