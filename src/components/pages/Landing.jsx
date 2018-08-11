@@ -32,61 +32,57 @@ class Landing extends React.Component {
   }
   render() {
     return (
-      <div className="kst-landing-background">
-                  <Carousel
-              edgeEasing={true}
-              autoplay={true}
-              autoplayinterval={2}
-              transitionMode={this.state.transitionMode}
-              cellAlign={this.state.cellAlign}
-              slidesToShow={this.state.slidesToShow}
-              wrapAround={this.state.wrapAround}
-              slideIndex={this.state.slideIndex}
-              renderTopCenterControls={({ currentSlide }) => (
-                <div
-                  style={{
-                    fontFamily: 'Helvetica',
-                    color: '#fff',
-                    textDecoration: this.state.underlineHeader
-                      ? 'underline'
-                      : 'none'
-                  }}
-                >   </div>
-              )}
-            >
-              {colors
-                .slice(0, this.state.length)
-                .map((color, index) => (
-                  <img
-                    src={`http://placehold.it/1000x400/${color}/ffffff/&text=slide${index +
-                      1}`}
-                    key={color}
-                    onClick={this.handleImageClick}
-                  />
-                ))}
-            </Carousel>
-        <Grid textAlign='center' container>
-          <section className="mainboxHome index">
+        <div className="kst-landing-background">
+          <Grid textAlign='center' container>
+{/**slides: about us, 50th fastest growing companies, careers, Testimonials, credentials**/}
 
+    <section className="mainboxHome index">
+  <div className="full-slide-container">
+    <div className="slideshow-container">
 
-            <section className="infobox">
+    {/*<div className="mySlides fade">
+      <img src="/images/Compac.png" styles="width:100%"/>
+    </div>
 
-              <article className="infoHeader">
-                <h1>Recent News</h1>
-              </article>
+    <div className="mySlides fade">
+      <img src="/images/NECCicon2.jpg" styles="width:100%"/>
+    </div>*/}
 
-              <div className="newsHolder">
+    <div className="mySlides fade">
+      <img src="/images/NECCicon1.jpg" styles="width:100%"/>
+    </div>
 
-                <article className="newsblock test">
-                  <div className="block1">
-                    <a href="NECC2018July.html"><img src="images/NECCicon1.jpg" alt="Navy Housing Icon"></img></a>              </div>
-                  <div className="block2">
-                    <a href="NECC2018July.html"><h1>NECC Award</h1></a>
+    <a className="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a className="next" onclick="plusSlides(1)">&#10095;</a>
 
-                  </div>
-                  <div className="block3">
-                    <p>
-                      Ka’ala Systems Technology Corp. Awarded Navy Support Fleet Logistics Center, Pearl Harbor, Hawaii the service contract for the N5 strategic planning and policy guidance on expeditionary...
+    </div>
+    <br/>
+
+    <div styles="text-align:center">
+      <span className="dot" onclick="currentSlide(1)"></span>
+      <span className="dot" onclick="currentSlide(2)"></span>
+      <span className="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+      <section className="infobox">
+
+        <article className="infoHeader">
+          <h1>Recent News</h1>
+        </article>
+
+        <div className="newsHolder">
+
+        <article className="newsblock test">
+          <div className="block1">
+            <a href="NECC2018July.html"><img src="images/NECCicon1.jpg" alt="Navy Housing Icon"></img></a>              </div>
+          <div className="block2">
+            <a href="NECC2018July.html"><h1>NECC Award</h1></a>
+
+          </div>
+          <div className="block3">
+            <p>
+            Ka’ala Systems Technology Corp. Awarded Navy Support Fleet Logistics Center, Pearl Harbor, Hawaii the service contract for the N5 strategic planning and policy guidance on expeditionary...
+
             </p>
                   </div>
                 </article>

@@ -1,0 +1,78 @@
+.service-grid{
+  display: inline-grid;
+  width: 100%;
+}
+
+.service-grid-item1{
+  grid-row: 1;
+  grid-column: 1;
+}
+.service-grid-item2{
+  grid-row: 1;
+  grid-column: 2;
+  border-left-style: inset;
+  padding-left: 20px;
+}
+
+.h25{
+
+}
+
+/*when index box begins to overflow
+FIRST BOX CLOSE
+TODO Optimize by bringing these settings to the default
+*/
+@media screen and (min-width:1032px)
+{
+}
+/* box1 fixes */
+@media screen and (max-width:1200px) and (min-width:1160px){
+
+}
+/*SECOND BOX CLOSE */
+@media screen and (max-width:1160px) and (min-width:800px)
+{
+
+}
+/*when titlebox begins to overflow */
+@media screen and (max-width:881px)
+{
+  .initials{
+    display: none;
+  }
+
+}
+/*When Alert and Contentbox overflow*/
+@media screen and (max-width: 800px){
+
+}
+/*for tablets and smaller screens*/
+/*THIRD BOX CLOSE*/
+@media screen and (max-width:800px) and (min-width:620px)
+{
+
+}
+/* When banner overflows*/
+@media screen and (max-width:660px){
+
+}
+
+@media screen and (max-width:652px) and (min-width:619px){
+
+}
+/* For Phones and Really Small Screens*/
+/*FOURTH BOX CLOSE*/
+@media screen and (max-width:620px)and (min-width:477px){
+
+
+
+}
+/*FIFTH BOX CLOSE  ---  LAST ONE JK NOT REALLY*/
+@media screen and (max-width:477px){
+
+}
+
+/*Sixth BOX CLOSE  ---  THE REAL LAST ONE*/
+@media screen and (max-width:340px){
+
+}

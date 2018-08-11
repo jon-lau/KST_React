@@ -213,6 +213,7 @@ position:relative;
 .box1 p{
   margin-bottom: 50px;
   font-size: 20px;
+  font-variant: normal;
 }
 .box1 h1{
   background-color: var(--box1color);
@@ -646,6 +647,9 @@ position:relative;
 .buttoncenter td{
   padding: 40px;
 }
+.buttoncenter.tight td{
+  padding: 10px;
+}
 /*.content p{
 font-size: 20px;
 }*/
@@ -1078,7 +1082,7 @@ TODO Optimize by bringing these settings to the default
 {
   .box1{
     height: 300px;
-    width: 500px;
+    width: 700px;
     font-size: 25px;
     padding: 30px;
   }
@@ -1126,6 +1130,27 @@ TODO Optimize by bringing these settings to the default
     /*width: 100%;*/
   }
 
+}
+/* box1 fixes */
+@media screen and (max-width:1200px) and (min-width:1160px){
+
+    .box1{
+      height: 300px;
+      width: 500px;
+      font-size: 20px;
+      padding: 30px;
+    }
+    .box1 h1{
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 100%;
+    }
+    .box1 p{
+      padding-left:20px;
+      padding-right: 20px;
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
 }
 @media screen and (max-width:1220px) and (min-width:1032px){
   .certifications img{
@@ -1236,18 +1261,19 @@ TODO Optimize by bringing these settings to the default
   }
   .box1{
     height: 244px;
-    width: 44%;
-    font-size: 15px;
+    width: 50%;
+    font-size: 13px;
     padding: 15px;
   }
   .box1 h1{
     margin-bottom: 20px;
+    font-size: 17px;
   }
   .box1 p{
     padding-left:10px;
     padding-right: 10px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .infobox{
     width: 44%;
@@ -1377,7 +1403,7 @@ TODO Optimize by bringing these settings to the default
   }
   .box1{
     height: 244px;
-    width: 38%;
+    width: 53%;
     font-size: 12px;
     padding: 15px;
     /*position: absolute;
@@ -1386,6 +1412,7 @@ TODO Optimize by bringing these settings to the default
   .box1 h1{
 
     margin-bottom: 20px;
+    font-size: 14px;
   }
   .box1 p{
     padding-left:10px;
@@ -1509,7 +1536,7 @@ TODO Optimize by bringing these settings to the default
 
   }*/
   .box1{
-    height: 170px;
+    height: 250px;
     width: 90%;
     font-size: 12px;
     padding: 15px;
@@ -1719,8 +1746,8 @@ TODO Optimize by bringing these settings to the default
   }
   .box1{
     margin-left: 4px;
-    height: 150px;
-    width: 85%;
+    height: 185px;
+    width: 90%;
     font-size: 12px;
     padding: 15px;
     left: 4%;
@@ -1730,7 +1757,7 @@ TODO Optimize by bringing these settings to the default
     position: relative;
     margin-bottom: 10px;
     font-size: 8px;
-    width: 70%;
+    width: 100%;
   }
   .box1 p{
     padding-left:10px;
